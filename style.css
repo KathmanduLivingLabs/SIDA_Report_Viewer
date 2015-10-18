@@ -1,0 +1,63 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.form_type {
+	display: inline-block;
+	border: 1px solid lightgrey;
+	margin: 20px;
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
+.form_type:hover {
+	background-color: lightblue;
+	cursor: pointer;
+}
+
+.dates {
+	display: inline-block;
+	margin: 20px;
+	height: 300px;
+	width: 240px;
+	border: 1px solid lightgrey;
+	overflow: scroll;
+	padding-top: 10px;
+}
+
+.result {
+	display: inline-block;
+	margin: 20px;
+	height: 300px;
+	width: 400px;
+	border: 1px solid lightgrey;
+	overflow: scroll;
+	padding-top: 10px;
+}
+
+.dir_name {
+	margin-bottom: 6px;
+	text-align: center;
+	cursor: pointer;
+	border-bottom: 1px solid lightgrey;
+}
+
+.dir_name:hover {
+	background-color: lightblue;
+}
+
+.item {
+	margin-bottom: 6px;
+	text-align: center;
+	cursor: pointer;
+	border-bottom: 1px solid lightgrey;
+}
+
+.item:hover {
+	background-color: lightblue;
+}
+
+.display {
+	color: #CA2323;
+	margin-left: 40px;
+	margin-top: 20px;
+}
