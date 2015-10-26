@@ -20,7 +20,11 @@ $(function() {
 
 			$('.dir_name').click(function(e) {
 				var dirName = e.target.innerHTML;
-				var query = 'http://45.55.41.12/SIDAHTML/sidaHtml.php?dir_name=' + 
+				//old path
+				//var query = 'http://45.55.41.12:9001/non-psql/SIDAHTML/sidaHtml.php?dir_name=' + 
+				
+				//new path (test repo path)
+				var query = 'http://45.55.41.12:9001/
 							dirName + '&form_type=' + formType;
 				$('.display').html('Loading...');
 				$.get(query, function(data) {
