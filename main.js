@@ -20,12 +20,11 @@ $(function() {
 
 			$('.dir_name').click(function(e) {
 				var dirName = e.target.innerHTML;
-				//old path
-				//var query = 'http://45.55.41.12:9001/non-psql/SIDAHTML/sidaHtml.php?dir_name=' + 
+				//original path
+				var query = 'http://45.55.41.12/SIDAHTML/sidaHtml.php?dir_name=' + dirName + '&form_type=' + formType;
 				
-				//new path (test repo path)
-				var query = 'http://45.55.41.12:9001/
-							dirName + '&form_type=' + formType;
+				//new path (to test repo port 9002)
+				//var query = 'http://45.55.41.12:9002/non-psql/SIDAHTML/sidaHtml.php?dir_name=' + dirName + '&form_type=' + formType;
 				$('.display').html('Loading...');
 				$.get(query, function(data) {
 					console.log(data);
