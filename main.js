@@ -1,4 +1,5 @@
 $(function() {
+alert("hello");
 	$('.form_type').click(function(e) {
 		var formType = e.target.className.split(' ')[1];
 		console.log(formType);
