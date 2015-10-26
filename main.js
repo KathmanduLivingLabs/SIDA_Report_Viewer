@@ -1,9 +1,9 @@
 $(function() {
-alert("hello");
 	$('.form_type').click(function(e) {
 		var formType = e.target.className.split(' ')[1];
 		console.log(formType);
-		var query = 'http://45.55.41.12/SIDAHTML/sidaHtml.php?dir_name=init&form_type=' + formType;
+		//var query = 'http://45.55.41.12/SIDAHTML/sidaHtml.php?dir_name=init&form_type=' + formType;
+		var query = 'http://45.55.41.12:9002/non-psql/SIDAHTML/sidaHtml.php?dir_name=init&form_type=' + formType;
 		console.log(query);
 		$('.display').html('Loading...');
 		$.get(query, function(data) {
@@ -22,10 +22,10 @@ alert("hello");
 			$('.dir_name').click(function(e) {
 				var dirName = e.target.innerHTML;
 				//original path
-				var query = 'http://45.55.41.12/SIDAHTML/sidaHtml.php?dir_name=' + dirName + '&form_type=' + formType;
+				//var query = 'http://45.55.41.12/SIDAHTML/sidaHtml.php?dir_name=' + dirName + '&form_type=' + formType;
 				
 				//new path (to test repo port 9002)
-				//var query = 'http://45.55.41.12:9002/non-psql/SIDAHTML/sidaHtml.php?dir_name=' + dirName + '&form_type=' + formType;
+				var query = 'http://45.55.41.12:9002/non-psql/SIDAHTML/sidaHtml.php?dir_name=' + dirName + '&form_type=' + formType;
 				$('.display').html('Loading...');
 				$.get(query, function(data) {
 					console.log(data);
